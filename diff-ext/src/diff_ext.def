@@ -1,0 +1,12 @@
+LIBRARY diff-ext.dll
+DESCRIPTION  'diff_ext Shell Extension build with MinGW'
+
+EXPORTS
+;    DllCanUnloadNow=DllCanUnloadNow@0
+;    DllGetClassObject=DllGetClassObject@12
+;    DllRegisterServer=DllRegisterServer@0
+;    DllUnregisterServer=DllUnregisterServer@0
+    DllCanUnloadNow
+    DllGetClassObject
+    DllRegisterServer
+    DllUnregisterServer

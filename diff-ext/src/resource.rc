@@ -1,0 +1,102 @@
+/*
+ * Copyright (c) 2003-2010, Sergey Zorin. All rights reserved.
+ *
+ * This software is distributable under the BSD license. See the terms
+ * of the BSD license in the LICENSE file provided with this software.
+ *
+ */
+
+#include <windows.h>
+
+#include "resource.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+VS_VERSION_INFO VERSIONINFO
+  FILEVERSION 1,9,2,463
+  PRODUCTVERSION 1,9,2,463
+  FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+  FILEFLAGS VS_FF_DEBUG
+#else
+  FILEFLAGS 0L
+#endif
+  FILEOS VOS_NT_WINDOWS32
+  FILETYPE VFT_DLL
+  FILESUBTYPE VFT_UNKNOWN
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904b0"
+    {
+        VALUE "Comments", ""
+        VALUE "CompanyName", ""
+        VALUE "FileDescription", "diff shell extension"
+        VALUE "FileVersion", "1.9.2"
+        VALUE "InternalName", "diff shell extension"
+        VALUE "LegalCopyright", "Copyright ?2003-2010 Sergey Zorin"
+        VALUE "OriginalFilename", "diff-ext.dll"
+        VALUE "ProductName", "Diff Context Menu Extension"
+        VALUE "ProductVersion", "1.9.2"
+    }
+  }
+/*  
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "041904e3"
+    {
+        VALUE "Comments", ""
+        VALUE "CompanyName", ""
+        VALUE "FileDescription", "diff shell extension"
+        VALUE "FileVersion", "1.9.2"
+        VALUE "InternalName", "diff shell extension"
+        VALUE "LegalCopyright", "Copyright ?2003-2010 Сергей Зори?
+        VALUE "OriginalFilename", "diff-ext.dll"
+        VALUE "ProductName", "Diff Context Menu Extension"
+        VALUE "ProductVersion", "1.9.2"
+    }
+  }
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "042204e3"
+    {
+        VALUE "Comments", ""
+        VALUE "CompanyName", ""
+        VALUE "FileDescription", "diff shell extension"
+        VALUE "FileVersion", "1.9.2"
+        VALUE "InternalName", "diff shell extension"
+        VALUE "LegalCopyright", "Copyright ?2003-2010 Сергій Зорі?
+        VALUE "OriginalFilename", "diff-ext.dll"
+        VALUE "ProductName", "Diff Context Menu Extension"
+        VALUE "ProductVersion", "1.9.2"
+    }
+  }
+*/  
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x409, 1200//, 0x419, 1200, 0x422, 1200
+  }
+}
+
+STRINGTABLE
+{
+  DIFF_STR "Compare"
+  DIFF3_STR "3-way compare"
+  DIFF_WITH_STR "Compare to"
+  DIFF_WITH_FILE_STR "Compare to ''%1''"
+  DIFF3_WITH_STR "3-way compare to"
+  DIFF3_WITH_FILE_STR "3-way compare to ''%1''"
+  DIFF_LATER_STR "Compare later"
+  CLEAR_STR "Clear"
+  
+  DIFF_HINT "Compare selected files."
+  DIFF_WITH_HINT "Compare to ''%1''."
+  DIFF3_HINT "3-way compare selected files."
+  DIFF3_WITH_HINT "3-way compare to ''%1''."
+  DIFF_LATER_HINT "Save selected file(s) for later comparison."
+  CLEAR_HINT "Clear selected files list."
+  
+  CREATE_PROCESS_STR "Could not start diff command. Please run diff_ext setup program and verify your configuration."
+  
+  ERROR_STR "Error"
+}
