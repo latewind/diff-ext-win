@@ -456,6 +456,7 @@ DIFF_EXT::InvokeCommand(LPCMINVOKECOMMANDINFO ici) {
 		else if (LOWORD(ici->lpVerb) == IDM_CLEAR) {
 			//      TRACE trace(__FUNCTION__, __FILE__, __LINE__, 4);
 			_recent_files->clear();
+			SERVER::instance()->save_history();
 		}
 		else {
 			//      TRACE trace(__FUNCTION__, __FILE__, __LINE__, 4);

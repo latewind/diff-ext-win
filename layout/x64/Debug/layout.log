@@ -1,1 +1,5 @@
-﻿
+﻿  pch.cpp
+  layout.cpp
+  layout.c
+x64\Debug\layout.obj : warning LNK4042: object specified more than once; extras ignored
+  layout.vcxproj -> D:\code\git\diff-ext-win\x64\Debug\layout.lib

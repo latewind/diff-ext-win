@@ -1,1 +1,11 @@
-﻿
+﻿  file_sink.cpp
+  icon.cpp
+  log.cpp
+  menu.cpp
+  string.cpp
+  trace.cpp
+  Generating Code...
+  hyperlink.c
+  resource_string.c
+  Generating Code...
+  util.vcxproj -> D:\code\git\diff-ext-win\x64\Debug\util.lib
